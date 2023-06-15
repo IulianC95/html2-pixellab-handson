@@ -1,0 +1,28 @@
+body {
+  background-color: blue;
+  color: red;
+}
+
+.shazam {
+  color: red;
+}
+
+.product-tile {
+  text-align: center;
+
+  .product-image {
+    display: block;
+
+    .product-pricing {
+      font-size: 24px;
+
+      span {
+        font-weight: bold;
+
+        &:first-child {
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
