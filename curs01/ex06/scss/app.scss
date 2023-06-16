@@ -1,0 +1,129 @@
+.squares {
+  width: 80%;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin square {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+@mixin square-turquiose($turcoaz: turquoise) {
+  background-color: $turcoaz;
+}
+
+@mixin square-magenta($mag: magenta) {
+  background-color: $mag;
+}
+
+@mixin square-peru($per: peru) {
+  background-color: $per;
+}
+
+@mixin square-purple($mov: purple) {
+  background-color: $mov;
+}
+
+.square {
+  @include square;
+
+  @include square-turquiose;
+}
+
+.square-magenta {
+  @include square;
+
+  @include square-magenta;
+}
+
+.square-peru {
+  @include square;
+
+  @include square-peru;
+}
+
+.square-purple {
+  @include square;
+
+  @include square-purple;
+}
+
+.circles {
+  width: 75%;
+  border-radius: 20px;
+  margin: 0 auto;
+  border: 2px dotted brown;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@mixin circle-purple($mov: purple) {
+  background-color: $mov;
+  border: 3px solid red;
+}
+
+@mixin red-3px-border($rosu: red) {
+  border: 3px solid $rosu;
+}
+
+@mixin circle-red($rosu: red) {
+  background-color: $rosu;
+}
+
+@mixin circle-green($verde: green) {
+  background-color: $verde;
+}
+
+@mixin circle-blue($albastru: blue) {
+  background-color: $albastru;
+}
+
+@mixin circle-border-blue($albastru: blue) {
+  border-color: $albastru;
+}
+
+.circle {
+  @include circle;
+
+  @include circle-purple;
+}
+
+.circle-red {
+  @include circle;
+
+  @include circle-red;
+}
+
+.circle-green {
+  @include circle;
+
+  @include circle-green;
+}
+
+.circle-blue {
+  @include circle;
+
+  @include circle-blue;
+}
+
+.circle-border-blue {
+  @include circle;
+
+  @include circle-border-blue;
+}
