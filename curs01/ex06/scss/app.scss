@@ -35,27 +35,27 @@
 }
 
 .square {
-  @include square;
+  @include square();
 
-  @include square-turquiose;
+  @include square-turquiose();
 }
 
 .square-magenta {
-  @include square;
+  @include square();
 
-  @include square-magenta;
+  @include square-magenta();
 }
 
 .square-peru {
-  @include square;
+  @include square();
 
-  @include square-peru;
+  @include square-peru();
 }
 
 .square-purple {
-  @include square;
+  @include square();
 
-  @include square-purple;
+  @include square-purple();
 }
 
 .circles {
@@ -99,31 +99,31 @@
 }
 
 .circle {
-  @include circle;
+  @include circle();
 
-  @include circle-purple;
+  @include circle-purple();
 }
 
 .circle-red {
-  @include circle;
+  @include circle();
 
-  @include circle-red;
+  @include circle-red();
 }
 
 .circle-green {
-  @include circle;
+  @include circle();
 
-  @include circle-green;
+  @include circle-green();
 }
 
 .circle-blue {
-  @include circle;
+  @include circle();
 
-  @include circle-blue;
+  @include circle-blue();
 }
 
 .circle-border-blue {
-  @include circle;
+  @include circle();
 
-  @include circle-border-blue;
+  @include circle-border-blue();
 }
