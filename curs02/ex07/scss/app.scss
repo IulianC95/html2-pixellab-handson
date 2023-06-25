@@ -3,3 +3,23 @@
   justify-content: space-between;
   margin: 16px 0;
 }
+
+$colors: (
+  'main': red,
+  'primary': blue,
+  'secondary': green,
+  'tertiary': yellow,
+  'neutral': gray,
+);
+
+@each $color, $value in $colors {
+  .btn-#{$color} {
+    color: $value;
+  }
+  .btn-bg-#{$color} {
+    background-color: $value;
+  }
+  .text-#{$color} {
+    color: $value;
+  }
+}
