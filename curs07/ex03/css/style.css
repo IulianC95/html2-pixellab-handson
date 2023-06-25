@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 25%;
+}
+
+.loading-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* cerinta 1 */
+.anim-1 {
+  animation-name: anim-1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes anim-1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* cerinta 2 */
+.anim-2 {
+  animation-name: anim-2;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim-2 {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+/* cerinta 3 */
+.main {
+  display: block;
+}
+
+.container-2 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.square {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  margin: 0 5px;
+  animation-name: square-animations;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.square-2 {
+  animation-delay: 0.125s;
+}
+
+.square-3 {
+  animation-delay: 0.25s;
+}
+
+@keyframes square-animations {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* cerinta 4 */
+.squares {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  margin: 0 5px;
+  animation-name: square-animations-2;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.square-5 {
+  animation-delay: 0.125s;
+}
+
+.square-6 {
+  animation-delay: 0.25s;
+}
+
+@keyframes square-animations-2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* cerinta 5 */
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ccc;
+  border-top-color: red;
+  border-radius: 50%;
+  animation-name: spinnerAnimation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinnerAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

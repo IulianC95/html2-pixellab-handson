@@ -1,48 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
   <title>Animatii avansate</title>
   <style>
     .bar {
       height: 25px;
-      background: gray; 
+      background: gray;
       margin: 25px 0;
+
     }
+
+
 
     .bar-01 {
       background-color: red;
       width: 50px;
+      animation-name: bar01-animation;
+      animation-duration: 10s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in;
+    }
+
+    @keyframes bar01-animation {
+      0% {
+        width: 50px;
+      }
+
+      100% {
+        width: 100%;
+      }
     }
 
     .bar-02 {
       background-color: green;
       width: 150px;
+      animation-name: bar02-animation;
+      animation-duration: 8s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+    }
+
+    @keyframes bar02-animation {
+      0% {
+        width: 150px;
+      }
+
+      100% {
+        width: 100%;
+      }
     }
 
     .bar-03 {
       background-color: blue;
       width: 100%;
+      animation-name: bar03-animation;
+      animation-duration: 12s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in;
+    }
+
+    @keyframes bar03-animation {
+      25% {
+        width: 100%;
+      }
+
+      50% {
+        width: 75%;
+        background-color: yellow;
+      }
+
+      75% {
+        width: 200px;
+        background-color: red;
+      }
+
+      100% {
+        width: 5px;
+        background-color: blue;
+      }
     }
 
     .bar-04 {
       background-color: red;
       width: 100%;
+      animation-name: bar04-animation;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+
+    @keyframes bar04-animation {
+      25% {
+        width: 100%;
+      }
+
+      50% {
+        width: 50%;
+        background-color: blue;
+      }
+
+      75% {
+        width: 50%;
+        background-color: black;
+      }
+
+      100% {
+        width: 150px;
+        background-color: orange;
+      }
     }
 
     .bar-05 {
       background-color: green;
       width: 100%;
+      animation-name: bar05-animation;
+      animation-duration: 8s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+    }
+
+    @keyframes bar05-animation {
+      25% {
+        width: 100%;
+      }
+
+      50% {
+        width: 500px;
+        background-color: red;
+      }
+
+      75% {
+        width: 75%;
+        background-color: green;
+      }
+
+      100% {
+        width: 500px;
+        background-color: orange;
+      }
     }
 
     .bar-06 {
       background-color: blue;
       width: 200px;
+      animation-name: bar06-animation;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in;
+    }
+
+    @keyframes bar06-animation {
+      0% {
+        width: 200px;
+      }
+
+      100% {
+        width: 100%;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="bar bar-01"></div>
   <div class="bar bar-02"></div>
@@ -51,4 +179,5 @@
   <div class="bar bar-05"></div>
   <div class="bar bar-06"></div>
 </body>
+
 </html>
